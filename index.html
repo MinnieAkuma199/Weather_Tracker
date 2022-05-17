@@ -14,7 +14,11 @@
 </head>
 <body>
     <h1 class="text-center">Weather Dashboard</h1>
-    <h2 class="text-center" id="currentWeather"> This is where the city weather will be displayed</h2>
+    <h2 class="text-center" id="currentWeather"> This is where the CURRENT city weather will be displayed <p id="temp">Temp:</p>
+    <p id="wind">Wind:</p>
+    <p id="humidity">Humidity:</p>
+    </h2>
+    
     <main>
         
         <h3>5-Day Forecast: </h3>
@@ -62,17 +66,23 @@
             <button class="btn btn-outline-secondary" id="mybutton"type="button" >Search</button>
         </div>
         <aside>
-            <div class="bg-light border">Austin</div>
-            <div class="bg-light border">Denver</div>
-            <div class="bg-light border">New York</div>
-            <div class="bg-light border">Miami</div>
-            <div class="bg-light border">Eugene</div>
-            <div class="bg-light border">Orlando</div>
-            <div class="bg-light border">Seattle</div>
-            <div class="bg-light border">Honolulu</div>
-
+            <div class="bg-light border"><button type="button" class="btn btn-light">Austin</button></div>
+            <div class="bg-light border"><button type="button" class="btn btn-light">Denver</button></div>
+            <div class="bg-light border"><button type="button" class="btn btn-light">Eugene</button></div>
+            <div class="bg-light border"><button type="button" class="btn btn-light">Miami</button></div>
+            <div class="bg-light border"><button type="button" class="btn btn-light">Houston</button></div>
+            <div class="bg-light border"><button type="button" class="btn btn-light">Jersey City</button></div>
+            <div class="bg-light border"><button type="button" class="btn btn-light">Santa Monica</button></div>
+            <div class="bg-light border"><button type="button" class="btn btn-light">Honolulu</button></div>
         </aside>
-</div>
+    </div>
+<!-- 
+<button type="button" class="btn btn-dark">Denver</button>
+<button type="button" class="btn btn-dark">Miami</button>
+<button type="button" class="btn btn-dark">Eugene</button>
+<button type="button" class="btn btn-dark">Orlando</button>
+<button type="button" class="btn btn-dark">Seattle</button>
+<button type="button" class="btn btn-dark">Honolulu</button> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./script.js"></script>

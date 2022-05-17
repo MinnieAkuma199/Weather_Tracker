@@ -11,9 +11,13 @@ function getWeatherNow(lat, lon) {
       method: "GET",
     }).then(function (response) {
         console.log(response);
-        console.log(response.main.temp)
+        console.log(response.main.temp);
+        console.log(response.wind.speed);
+        console.log(response.main.humidity);
     });
 }
+
+
 //MIAMI lat and long below
 getWeatherNow(25.7617, -80.1918);
 
