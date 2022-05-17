@@ -12,8 +12,48 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
-<body class="">
-    <h1 class="text-center" id="header">Weather Dashboard</h1>
+<body>
+    <h1 class="text-center">Weather Dashboard</h1>
+    <h2 class="text-center" id="currentWeather"> This is where the city weather will be displayed</h2>
+    <main>
+        
+        <h3>5-Day Forecast: </h3>
+        <div class="card">
+            <div class="card-body" id="day1">
+                <p id="temp">Temp:</p>
+                <p id="wind">Wind:</p>
+                <p id="humidity">Humidity:</p>
+            </div>
+        </div>
+        <div class="card" id="day2">
+            <div class="card-body">
+                <p id="temp">Temp:</p>
+                <p id="wind">Wind:</p>
+                <p id="humidity">Humidity:</p>
+            </div>
+        </div>
+        <div class="card" id="day3">
+            <div class="card-body">
+                <p id="temp">Temp:</p>
+                <p id="wind">Wind:</p>
+                <p id="humidity">Humidity:</p>
+            </div>
+        </div>
+        <div class="card " id="day4">
+            <div class="card-body">
+                <p id="temp">Temp:</p>
+                <p id="wind">Wind:</p>
+                <p id="humidity">Humidity:</p>
+            </div>
+        </div>
+        <div class="card " id="day5">
+            <div class="card-body">
+                <p id="temp">Temp:</p>
+                <p id="wind">Wind:</p>
+                <p id="humidity">Humidity:</p>
+            </div>
+        </div>
+    </main>
     <div class="container">
         <div class="mb-1 ">
             <h2>Search for your City's Weather☔️</h2>
@@ -29,48 +69,12 @@
             <div class="bg-light border">Eugene</div>
             <div class="bg-light border">Orlando</div>
             <div class="bg-light border">Seattle</div>
-            <div class="bg-light border">San Franscisco</div>
-        </aside>
+            <div class="bg-light border">Honolulu</div>
 
-    <article id="currentWeather"style="padding: 10px; border: 2px solid lightblue;"> This is where the city weather will be displayed</article>
-        <h3>5-Day Forecast:</h3>
-    <div class="card">
-        <div class="card-body" id="day1">
-            <p id="temp">Temp:</p>
-            <p id="wind">Wind:</p>
-            <p id="humidity">Humidity:</p>
-        </div>
-    </div>
-    <div class="card" id="day2">
-        <div class="card-body">
-            <p id="temp">Temp:</p>
-            <p id="wind">Wind:</p>
-            <p id="humidity">Humidity:</p>
-        </div>
-    </div>
-    <div class="card" id="day3">
-        <div class="card-body">
-            <p id="temp">Temp:</p>
-            <p id="wind">Wind:</p>
-            <p id="humidity">Humidity:</p>
-        </div>
-    </div>
-    <div class="card" id="day4">
-        <div class="card-body">
-            <p id="temp">Temp:</p>
-            <p id="wind">Wind:</p>
-            <p id="humidity">Humidity:</p>
-        </div>
-    </div>
-    <div class="card" id="day5">
-        <div class="card-body"> 
-            <p id="temp">Temp:</p>
-            <p id="wind">Wind:</p>
-            <p id="humidity">Humidity:</p>
-        </div>
-    </div>  
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </aside>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>
