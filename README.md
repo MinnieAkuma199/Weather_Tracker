@@ -2,9 +2,11 @@
 
 Link to deployed site: https://minnieakuma199.github.io/Weather_Tracker/
 
+![alt text](./Screen%20Shot%202022-05-19%20at%203.47.09%20PM.png)
+
 ## Purpose
 
-To create a weather app that a user can use to see their weather based off a city's location.
+To create a weather app that once a user searches a city, the user then can see temperature, humidity, and wind speed displayed for both the current day's weather and a 5 day forecast.
 
 ## What I learned
 
