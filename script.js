@@ -2,7 +2,7 @@
 var inputEL = $('#myinput');
 var currentWeatherEl = $("#currentWeather");
 var pastCity = JSON.parse(localStorage.getItem("userCity"))?JSON.parse(localStorage.getItem("userCity")):[];
-
+var fiveDayEl = $("#fiveDay");
 //creating a function so that i can change coordinates in the global scope
 function getWeatherNow(lat, lon) {
     var requestUrl =
@@ -19,6 +19,8 @@ function getWeatherNow(lat, lon) {
         // console.log(response.main.temp);
         // console.log(response.wind.speed);
         // console.log(response.main.humidity);
+      currentWeather(response.current);
+      fiveDayWeather(response.daily);
     });
 }
 
@@ -40,14 +42,37 @@ function geomapping(cityname) {
 }
 
 //function for current weather
+function currentWeather(weather) {
+  currentWeatherEl.html("") 
+  console.log(weather)
+  var temp = document.createElement("p");
+  temp.textContent = "Temperature: " + weather.temp;
+  var wind = document.createElement("p");
+  wind.textContent = "Wind: " + weather.wind_speed;
+  var humidity = document.createElement("p");
+  humidity.textContent = "Humidity: " + weather.humidity;
+  currentWeatherEl.append(temp, wind, humidity);
+}
 
-//function for 5 day weather
+function fiveDayWeather(daily) {
+  console.log(daily)
+  fiveDayEl.html("");
+  for (let i = 1; i < 6; i++) {
+    var card = document.createElement("div");
+    card.setAttribute("class", "card");
+    var temp = document.createElement("p");
+    temp.textContent = "Temperature: " + daily[i].temp.day;
+    var wind = document.createElement("p");
+    wind.textContent = "Wind: " + daily[i].wind_speed;
+    var humidity = document.createElement("p");
+    humidity.textContent = "Humidity: " + daily[i].humidity;
+    card.append(temp, wind, humidity); //append different varaibales you declared above to card
+    fiveDayEl.append(card) //apend to page
+  }
+    
+}
 
 //need a function to display search history onto page
-
-
-//use geomapping api within openweather
-
 
 //storing in local storeage user input
 $("#mybutton").click(function (event) {

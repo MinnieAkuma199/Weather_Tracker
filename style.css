@@ -27,6 +27,9 @@ aside {
     border: 1rem;
     padding: 1rem;
 }
+#fiveDay {
+    display: flex;
+}
 
 .card {
     background-color: rgb(188, 228, 255);
