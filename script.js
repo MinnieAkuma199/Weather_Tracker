@@ -26,7 +26,7 @@ function getWeatherNow(lat, lon) {
 
 function geomapping(cityname) {
     var requestUrl =
-      "http://api.openweathermap.org/geo/1.0/direct?q=" +
+      "https://api.openweathermap.org/geo/1.0/direct?q=" +
       cityname + "&limit=1&appid=211f702161aca440a9963b1e1017de20";
     $.ajax({
       url: requestUrl,
