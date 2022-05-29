@@ -28,8 +28,7 @@ aside {
     padding: 1rem;
 }
 #fiveDay {
-            display: flex;
-            background-color: rgba(102, 192, 203, 0.406)
+    background-color: rgb(184, 230, 245);
 }
 
 .card {
@@ -49,7 +48,7 @@ main {
 h3 {
     padding: 2rem;
 }
-/* 
+
 @media (min-width: 768px) {
     #fiveDay { display: flex; 
-        background-color: rgba(102, 192, 203, 0.406)}} */
+        background-color: rgba(102, 192, 203, 0.406)}}
