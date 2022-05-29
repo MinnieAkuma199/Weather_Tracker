@@ -28,14 +28,18 @@ aside {
     padding: 1rem;
 }
 #fiveDay {
-    display: flex;
+            display: flex;
+            background-color: rgba(102, 192, 203, 0.406)
 }
 
 .card {
     background-color: rgb(188, 228, 255);
-    align-self: flex-end;
     margin-right: 3rem;
 
+}
+
+#styleToPage {
+    text-align: center;
 }
 
 main {
@@ -45,3 +49,7 @@ main {
 h3 {
     padding: 2rem;
 }
+/* 
+@media (min-width: 768px) {
+    #fiveDay { display: flex; 
+        background-color: rgba(102, 192, 203, 0.406)}} */
