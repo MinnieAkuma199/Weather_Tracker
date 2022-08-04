@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 <body>
     <h1 class="text-center">Weather Dashboard</h1>
@@ -38,6 +38,57 @@
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="./script.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1 text-center">Weather Dashboard</span>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row d-flex flex-column flex-sm-row">
+            <div class="col-sm-4">
+                <h2>Search for a City</h2>
+                <input class="col-sm-8" type="text" id="citySearch">
+                <button id="searchBtn" class="btn btn-sm btn-danger">Search</button>
+                <div id="shCont"></div>
+            </div>
+            <div class="col-sm-8" id="forecastbox">
+                <h2>5 Day Weather Forecast</h2>
+                <div class="container-fluid mh-50 float-end" id="currbox">
+                    <h2 id="locntime"></h2>
+                    <ul id="currCond">
+                        <ul id="currTemp"></ul>
+                        <ul id="currWind"></ul>
+                        <ul id="currHum"></ul>
+                        <ul id="currUV"></ul>
+                    </ul>
+                </div>
+                <div id="daycards" class="d-sm-inline-flex mh-50"></div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+            <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
