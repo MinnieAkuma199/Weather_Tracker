@@ -6,7 +6,7 @@
 
 ## Description
 
-- Users need to know what the weather will be like for the next 5 days. I created a weather app that once a user searches a city, a 5 day forecast is received. The app displays temperature, humidity, and wind speed.
+- Users need to know what the weather will be like for the next 5 days. I created a weather app that once a user searches a city, a 5 day forecast is received. The app displays temperature, humidity, UV index and wind speed.
 
 - I utilized a 3rd party library called Bootstrap as well as jQuery to finish this app. I fetched OpenWeatherMap API to achieve the core functionality of this website. 
 
