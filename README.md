@@ -8,7 +8,7 @@
 
 - Users need to know what the weather will be like for the next 5 days. I created a weather app that once a user searches a city, a 5 day forecast is received. The app displays temperature, humidity, UV index and wind speed.
 
-- I utilized a 3rd party library called Bootstrap as well as jQuery to finish this app. I fetched OpenWeatherMap API to achieve the core functionality of this website. 
+- I utilized a 3rd party library called Bootstrap as well as jQuery to finish this app. I fetched OpenWeatherMap API to achieve the core functionality of this website.
 
 ## Table of Contents
 
@@ -32,11 +32,11 @@ $ npm i
 
 ### Usage
 
-The following video shows an example of the application being used from the command line:
+The following gif shows an example of the application being used:
 
-[LINK](https://minnieakuma199.github.io/Weather_Tracker/)
+[LINK to deployed site](https://minnieakuma199.github.io/Weather_Tracker/)
 
-![alt text](./Screen%20Shot%202022-05-19%20at%203.47.09%20PM.png)
+![alt text](./assets/images/Weather-App.gif)
 
 ### Contributors
 
